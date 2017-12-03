@@ -1,6 +1,6 @@
 import AsyncLoad from 'components/AsyncLoad'
 
-const Index = AsyncLoad(import(/* webpackChunkName: "feed" */ 'screens/Index/index.js'))
+const Index = AsyncLoad(import(/* webpackChunkName: "index" */ 'screens/Index/index.js'))
 
 export default [
   {
