@@ -37,10 +37,10 @@ module.exports = function(
 
   // Setup the script rules
   appPackage.scripts = {
-    start: 'larini-react-scripts start',
-    build: 'larini-react-scripts build',
-    test: 'larini-react-scripts test --env=jsdom',
-    eject: 'larini-react-scripts eject',
+    start: 'react-scripts start',
+    build: 'react-scripts build',
+    test: 'react-scripts test --env=jsdom',
+    eject: 'react-scripts eject',
   };
 
   fs.writeFileSync(
@@ -117,7 +117,7 @@ module.exports = function(
   }
 
   // Install react and react-dom for backward compatibility with old CRA cli
-  // which doesn't install react and react-dom along with larini-react-scripts
+  // which doesn't install react and react-dom along with react-scripts
   // or template is presetend (via --internal-testing-template)
   if (!isReactInstalled(appPackage) || template) {
     console.log(`Installing react and react-dom using ${command}...`);
