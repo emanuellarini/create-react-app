@@ -1,4 +1,3 @@
-import React from 'react'
 import AsyncLoad from 'components/AsyncLoad'
 
 const Index = AsyncLoad(import(/* webpackChunkName: "feed" */ 'screens/Index/index.js'))
